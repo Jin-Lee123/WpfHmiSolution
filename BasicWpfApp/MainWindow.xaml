@@ -18,10 +18,9 @@
             <Path.Data>
                 <RectangleGeometry Rect="10,120,30,30"/>
             </Path.Data>
-            
         </Path>
         <Ellipse Fill="Green"
-                 HorizontalAlignment="Left" Height="100" Margin="126,296,0,0" VerticalAlignment="Top" Width="100"/>
+                 HorizontalAlignment="Left" Height="100" Margin="161,301,0,0" VerticalAlignment="Top" Width="100"/>
         <Rectangle Fill="Green" HorizontalAlignment="Left" Height="98" Margin="584,96,0,0" VerticalAlignment="Top" Width="121"/>
     </Grid>
 </Window>
