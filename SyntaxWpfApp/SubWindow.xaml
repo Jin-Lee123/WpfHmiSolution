@@ -1,17 +1,18 @@
-﻿<Window x:Class="SyntaxWpfApp.SubWindow"
+﻿<mah:MetroWindow x:Class="SyntaxWpfApp.SubWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SyntaxWpfApp"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="SubWindow" Height="450" Width="800">
-    <UniformGrid  Background="Orange" >
-        <Button Content="ThirdWindow" Canvas.Bottom="0" Canvas.Left="100" DockPanel.Dock="Top" Click="Button_Click"/>
-        <Button Content="Area B" Canvas.Top="25" Canvas.Left="0" DockPanel.Dock="Left" />
-        <Button Content="Area C" Canvas.Top="401" Canvas.Left="763" DockPanel.Dock="Right"/>
-        <Button Content="Area D" Canvas.Top="187" Canvas.Left="-22" DockPanel.Dock="Bottom"/>
-        <Button Content="Area e" Canvas.Top="187" Canvas.Left="-22" DockPanel.Dock="Bottom"/>
 
+    <UniformGrid Background="Orange">
+        <Button Content="Third Window" Canvas.Bottom="10" Canvas.Left="100" 
+                DockPanel.Dock="Top" Click="Button_Click"  />
+        <Button x:Name="BtnFourth" Content="Fourth Window" Canvas.Bottom="25" Canvas.Left="0"
+                DockPanel.Dock="Left"   />
+        <Button Content="Area C" Canvas.Bottom="401" Canvas.Left="0"  DockPanel.Dock="Right" />
+        <Button Content="Area D" Canvas.Bottom="20" Canvas.Left="190" DockPanel.Dock="Bottom"/>
     </UniformGrid>
-</Window>
+</mah:MetroWindow>

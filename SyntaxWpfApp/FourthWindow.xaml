@@ -1,0 +1,41 @@
+﻿<Window x:Class="SyntaxWpfApp.FourthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SyntaxWpfApp"
+        mc:Ignorable="d"
+        Title="FourthWindow" Height="450" Width="800">
+    
+    <Canvas>
+        <ListBox Width="100" Height="250" ItemsSource="{Binding}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Path=Speed}"/>
+                        <Label Content="{Binding Color}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button Width="200" Height="50" Canvas.Left="230" Canvas.Top="100" Content="Play me" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="21.16"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate>
+                    <Ellipse Fill="GreenYellow"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button >
+
+        <Label Canvas.Left="400" Canvas.Top="300" Width="100" Height="50" Content="{StaticResource sharedButton}"/>
+        <Rectangle Canvas.Left="578" Width="50" Height="50" Canvas.Top="222" Fill="{StaticResource accentBrush}"/>
+    </Canvas>
+</Window>

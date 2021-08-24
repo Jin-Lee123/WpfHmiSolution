@@ -1,8 +1,9 @@
-﻿using System.Windows.Media;
+﻿using SyntaxWpfApp;
+using System.Windows.Media;
 
 namespace BusinessLogic
 {
-    public class Car
+    public class Car : Notifier
     {
         public double Speed { get; set; }
         public Color Color { get; set; }
