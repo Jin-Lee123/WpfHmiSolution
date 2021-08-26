@@ -1,0 +1,20 @@
+[2021/08/25 12:25:50.928] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 14:39:06.760] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 15:24:11.640] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 16:25:14.455] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 16:25:50.428] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 16:33:12.287] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 16:49:54.638] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 17:06:03.180] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 17:06:39.150] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 17:08:18.505] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 17:08:21.432] [TID:1] [{stacktrace}]: 모니터링 시작 : BtnMonitoring_Click
+[2021/08/25 17:08:23.775] [TID:1] [{stacktrace}]: 위급처리 : FuelTank정지할 수 있습니다!
+[2021/08/25 17:10:31.333] [TID:1] [{stacktrace}]: SCADA Strat
+[2021/08/25 17:10:33.814] [TID:1] [{stacktrace}]: 모니터링 시작 : BtnMonitoring_Click
+[2021/08/25 17:10:35.990] [TID:1] [{stacktrace}]: 위급처리 : FuelTank정지할 수 있습니다!
+[2021/08/25 17:10:44.448] [TID:1] [{stacktrace}]: SCADA 프로그램 종료!
+[2021/08/25 17:14:43.687] [TID:1] [Info]: SCADA Strat
+[2021/08/25 17:14:49.246] [TID:1] [Info]: 모니터링 시작 : BtnMonitoring_Click
+[2021/08/25 17:14:50.623] [TID:1] [Warn]: 위급처리 : FuelTank정지할 수 있습니다!
+[2021/08/25 17:14:52.270] [TID:1] [Info]: SCADA 프로그램 종료!

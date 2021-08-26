@@ -1,0 +1,43 @@
+﻿<Window x:Class="NewScadaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewScadaApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200" WindowState="Maximized" Closing="Window_Closing" >
+    <Window.Resources>
+        <!-- 타일 리소스 -->
+        <DrawingBrush x:Key="BackgroundGrid" 
+                      TileMode="Tile" Viewport="-10,-10,40,40" 
+                      ViewportUnits="Absolute">
+            <DrawingBrush.Drawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry Rect="0,0,50,50"/>
+                    </GeometryDrawing.Geometry>
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="Gray" Thickness="1"/>
+                    </GeometryDrawing.Pen>
+                    <GeometryDrawing.Brush>
+                        <SolidColorBrush Color="DarkSlateBlue" />
+                    </GeometryDrawing.Brush>
+                </GeometryDrawing>
+            </DrawingBrush.Drawing>
+        </DrawingBrush>
+    </Window.Resources>
+    <Canvas Background="{StaticResource BackgroundGrid}">
+        <!--Step1 기본 컨트롤 구성-->
+        <Label Content="Simple SCADA" Canvas.Left="30" Canvas.Top="10" Foreground="Yellow" FontSize="50" FontFamily="Arial Black"/>
+        <Label x:Name="LblStatus" Canvas.Left="30" Canvas.Top="100" Content="Sample" Foreground="White" />
+        <Button x:Name="BtnMonitoring" Canvas.Left="451" Canvas.Top="41" Width="120" Height="30" Content="strat monitoring" Click="BtnMonitoring_Click"/>
+
+        <!--Step2 사용자컨트롤 사용-->
+        <local:UcTank Height="193" Canvas.Left="300" Canvas.Top="321" Width="434"/>
+        <local:UcPipe Height="100" Canvas.Left="216" Canvas.Top="375" Width="100"/>
+        <local:UcPipe Height="100" Canvas.Left="720" Canvas.Top="375" Width="100"/>
+        <local:UcMotor Height="162" Canvas.Left="813" Canvas.Top="352" Width="180"/>
+        <local:UcLED x:Name="LedState" Height="78" Canvas.Left="578" Canvas.Top="375" Width="72" CurrState="#808080"/>
+        <local:UcButton x:Name="BtnMotor" Height="45" Canvas.Left="923" Canvas.Top="401" Width="35" CustomClick="BtnMotor_CustomClick" />
+    </Canvas>
+</Window>
